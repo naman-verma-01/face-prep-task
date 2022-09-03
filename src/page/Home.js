@@ -9,7 +9,6 @@ function Home() {
     const [userData, setUserData] = useState([])
     const nav = useNavigate();
     const dispatch = useDispatch()
-
     const getUsers = async () => {
         
             const response = await fetch('https://randomuser.me/api/?results=10', {
@@ -43,7 +42,7 @@ function Home() {
         <>
 
             <div className='contactList' style={{}}>
-            <h1 style={{ zIndex:"10",color: "white",background:"rgba(8, 8, 7,0.8)",paddingBottom:"10px",position:"sticky", textAlign: "center",top:"0"  }}>My Contacts</h1><hr />
+            <h1 style={{ zIndex:"10",color: "white",background:"rgba(8, 8, 7,0.8)",paddingBottom:"10px",position:"sticky", textAlign: "center",top:"0",paddingTop:"20px"  }}>My Contacts</h1><hr />
 
                 <InfiniteScroll
                     pageStart={0}
@@ -64,8 +63,8 @@ function Home() {
                         </>
                     })
                     }
-                    <Shimmer style={{width:"90%"}} height={72} />
-                    <Shimmer style={{width:"90%"}} height={72} />
+                    <Shimmer  width={"100%"} height={72} /> 
+                    <Shimmer   width={"100%"} height={72} />
             <button type="submit" onClick={handleLogout} style={{zIndex:"10" ,width:"100%",height:"50px", position:"sticky",bottom:"0px", textAlign:"center",borderRadius:"0 0 0 0 "}} class="btn btn-dark" >Logout</button>
 
                 </InfiniteScroll>

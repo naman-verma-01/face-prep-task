@@ -41,12 +41,11 @@ body{
   border-radius: 2px;
 }
 
-/*.singleContact:hover{
+.singleContact:hover{
   background-color: rgb(205, 205, 205);
   border-radius: 5px;
-  padding: 25px;
-
-}*/
+  
+}
 
 .contactList{
   background-color: black;
