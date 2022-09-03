@@ -61,33 +61,8 @@ body{
   
 }
 
-
 .singleContact > div {
   text-align: left;
   font-size: 20px;
 }
 
-.thumbnail{
-  /*text-align: left;*/
-}
-
-.info{
-  /*text-align: right;*/
-}
-
-
-/*.item1 {
-  grid-row-start: 1;
-  grid-row-end:3;
-}
-
-.item2 {
-  grid-row-start: 1;
-  grid-row-end:2;
-}
-
-.item3 {
-  grid-row-start: 2;
-  grid-row-end:3;
-}
-*/

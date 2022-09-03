@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState, useRef } from 'react'
+import React, {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SET_AUTH_STATUS } from '../Reducers/types';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 function Login() {
     const [userInfo, setUserInfo] = useState({ username: "", password: "" })
@@ -31,9 +31,6 @@ function Login() {
                     <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password..." onChange={(event) => { event.preventDefault(); setUserInfo({ ...userInfo, password: event.target.value }) }} />
                 </div>
                 
-                {/*<input type="text" placeholder='User Name' onChange={(event) => { event.preventDefault(); setUserInfo({ ...userInfo, username: event.target.value }) }} />
-                <input type="password" placeholder='Password' onChange={(event) => { event.preventDefault(); setUserInfo({ ...userInfo, password: event.target.value }) }} />
-    */}
                 <button type="submit" style={{width:"100%"}} class="btn btn-dark" onClick={submitHandler}>Login</button>
                 <hr/>
             </form>
